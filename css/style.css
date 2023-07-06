@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+}
+
+/* VARIABLES DE COLOR */
+:root {
+    --primary-color: #8B48BF;
+    --secondary-color: rgb(139, 72, 191, 0.3);
+    --bright-color: #3CDDF3;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* ESTILOS PARA EL HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 80%;
+}
+
+nav li{
+    color: #242E52;
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.header-div nav, .header-div button {
+    display: none;
+}
+
+/* ESTILOS PARA  LA SECCION INTRODUCTORIA*/
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+/* Imagen principal de la pagina */
+.intro-img {
+    height: 400px;
+    width: 400px;
+}
+
+h1 {
+    color: #101837;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgb(0, 0, 0, 0.5);
+}
+
+.intro-content {
+    margin-top: 100px;
+    text-align: right;
+}
+
+.intro-content p {
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+/* Contenedor con forma de pildora */
+.pill {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+    padding: 12px 25px;
+}
+
+h4 {
+    color: #323851;
+    margin-left: 15px;
+}
+
+/* Boton pildora */
+.btn-pill {
+    box-shadow: 0px 4px 3px rgb(0, 0, 0, 0.5);
+    font-weight: 400;
+    height: 44px;
+    width: 134px;
+}
+
+/* SECCION DE INFO ADICIONAL */
+
+.plus-info {
+    background-color: var(--bright-color);
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.plus-info h2 {
+    font-size: 36px;
+}
+
+.plus-info div {
+    padding: 20px 0;
+}
+
+/* Interlineado para texto de pros y descripcion de deportistas */
+.pros-content-desktop, .pros-content-mobile, .pros-item-content, .player-content {
+    line-height: 25px;
+}
+
+/* Contenido de seccion de pros para desktop */
+.pros-content-desktop {
+    display: none;
+}
+
+.pros-items-section {
+    margin: 75px 0 75px 40px;
+}
+
+.pros-subtitles {
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 50px 0 0 50px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pros-item-content {
+    color: #B3B2B7;
+    margin: 20px 20px 20px 0;
+    padding: 10px;
+}
+
+/* ESTILOS PARA SECCION IMPORTANTE "LO MEJOR DEL MES" */
+
+.best-of-the-month {
+    color: #B3B2B7;
+    margin: 20px 20px 75px 20px;
+    text-align: center;
+}
+
+.best-of-the-month h2 {
+    color: #242E53;
+    font-size: 40px;
+    margin-bottom: 85px;
+}
+
+/* Seccion de jugadores/deportistas */
+.player-info {
+    background-color: #FAFAFA;
+    margin-bottom: 40px;
+    padding: 0 20px 20px 20px;
+}
+
+/* Bloques de info sobre Sanyo y Navarro (ocultos en mobile) */
+.sanyo-info, .navarro-info {
+    display: none;
+}
+
+.player-title {
+    color: #3F4868;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+/* ESTILOS PARA ULTIMO BLOQUE DE INFO ADICIONAL */
+.plus-info-final {
+    text-align: center;
+}
+
+.go-for-it button {
+    background-color: #232C50;
+}
+
+/* ESTILOS PARA EL FOOTER */
+
+footer {
+    background-color: #1E1E26;
+    padding: 45px;
+}
+
+
+
+footer input {
+    border-radius: 30px;
+    border: none;
+    margin-right: 5px;
+    padding: 12px;
+    width: 290px;
+}
+
+/* Items de navegacion en el footer */
+.footer-nav {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    padding: 20px 10px;
+}
+
+.footer-nav ul {
+    line-height: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Iconos de redes sociales */
+.social-networks ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px 0;
+}
+
+/* Logo de la empresa (footer) */
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+/* Texto de derechos reservados */
+.rights-reserved {
+    color: #8C8C94;
+    display: flex;
+    font-size: 12.5px;
+    justify-content: center;
+}
+
+/* PSEUDOCLASES PARA: items de navegacion, botones e input (mobile)*/
+nav li:active, button:active, .footer-nav li:active, footer input:active, .social-networks li:active{
+    opacity: 0.5;
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+/* REGLAS DE ESTILO PARA DESKTOP*/
+
+@media screen and (min-width:481px){
+
+    /* HEADER */
+
+    header {
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hamburguer-icon {
+        display: none;
+    }
+
+    .header-div nav, .header-div button {
+        display: block;
+    }
+
+    /* SECCION INTRODUCTORIA */
+    .intro-section {
+        flex-direction: row;
+        margin: 70px 150px;
+    }
+
+    /* texto de la seccion introductoria */
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 25px 0 25px 80px;
+    }
+
+    /* Imagen principal seccion introductoria */
+    .intro-img {
+        height: 460px;
+        width: 540px;
+    }
+
+    /* Bloque de info adicional */
+    .plus-info {
+        align-items: center;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+    }
+
+    .plus-info div {
+        height: 88px;
+        justify-self: center;
+        margin: 20px;
+        padding: 0;
+        width: 450px;
+    }
+
+    /* Contenido de los pros (desaparece en desktop) */
+    .pros-content-mobile {
+        display: none;
+    }
+
+    /* Contenido de los pros (aparece en desktop) */
+    .pros-content-desktop {
+        display: block;
+    }
+
+    .pros-subtitles {
+        background-color: #FFFFFF;
+    }
+
+    .pros-1-2 div {
+        width: 500px;
+    }
+
+    .pros-1-2 {
+        background-color: #FAFAFA;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pro-3 {
+        background-color: #FAFAFA;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pro-3 div {
+        width: 500px;
+    }
+
+    /* Informacion de los jugadores/deportistas */
+    .players-div {
+        display: flex;
+        margin: 0 40px
+    }
+
+    /* Informacion sobre Sanyo y Navarro (visible en desktop) */
+    .sanyo-info, .navarro-info {
+        display: block;
+    }
+
+    /* ULTIMO BLOQUE DE INFO ADICIONAL */
+    .plus-info-final {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 180px;
+        padding: 40px 0;
+    }
+
+    /* Div para boton "Go for it" */
+    .go-for-it {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .go-for-it button {
+        background-color: #FFFFFF;
+        color: var(--primary-color);
+    }
+
+    /* ESTILOS PARA EL FOOTER (DESKTOP) */
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    /* Bloque de redes sociales y logo de la empresa */
+    .socials-and-logo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    /* Items de navegacion en el footer */
+    .footer-nav {
+        height: 140px;
+        margin: 0 0 15px 0;
+        padding: 0;
+        width: 390px;
+    }
+
+    /* Div de derechos reservados */
+    .rights-reserved {
+        bottom: 50px;
+        position: absolute;
+        right: 180px;
+    }
+
+    /* Logo de la empresa (footer - Desktop) */
+    .footer-logo {
+        margin: 0;
+    }
+
+    /* Iconos de redes sociales */
+    .social-networks {
+        justify-content: space-around;
+        width: 155px;
+    }
+
+    footer input {
+        width: 200px;
+    }
+
+    /* PSEUDOCLASES PARA: items de navegacion, botones e input (desktop) */
+
+    nav li:hover, button:hover, .footer-nav li:hover, footer input:hover, .social-networks li:hover{
+        cursor: pointer;
+        opacity: 0.5;
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+
+    nav li:active, button:active, .footer-nav li:active, footer input:active, .social-networks li:active {
+        transform: scale(1.5);
+        transition: all 0.6s;
+    }
+
+    footer input:focus {
+        opacity: 1;
+    }
+
+    /* Pseudoelementos para desktop, color de seleccion */
+    *::selection {
+        background-color: var(--secondary-color);
+    }
+}
